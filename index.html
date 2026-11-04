@@ -1,33 +1,110 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>RoyalSweetness</title>
+
+    <style>
+
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+        }
+
+        body{
+            min-height:100vh;
+
+            background-image:url('back drop.png');
+            background-size:cover;
+            background-position:center;
+            background-repeat:no-repeat;
+
+            font-family:Arial, sans-serif;
+        }
+
+        header{
+
+            background-color:black;
+
+            height:140px;
+
+            display:flex;
+            justify-content:center;
+            align-items:center;
+
+            box-shadow:0 2px 10px rgba(0,0,0,.5);
+        }
+
+        .logo{
+            max-height:110px;
+            width:auto;
+        }
+
+        .hero{
+            height:calc(100vh - 140px);
+
+            display:flex;
+            justify-content:center;
+            align-items:center;
+
+            flex-direction:column;
+        }
+
+        .menu-button{
+
+            width:300px;
+            padding:20px;
+
+            margin:15px;
+
+            border:none;
+            border-radius:10px;
+
+            font-size:22px;
+            font-weight:bold;
+
+            background-color:rgba(0,0,0,.8);
+            color:white;
+
+            cursor:pointer;
+
+            transition:.3s;
+        }
+
+        .menu-button:hover{
+            background-color:white;
+            color:black;
+        }
+
+    </style>
+
+</head>
+
 <body>
 
     <header>
-        <h1>My Pastry Shop</h1>
-        <p>Fresh pastries made to order</p>
+
+        <img src="logo.png" class="logo">
+
     </header>
 
-    <div class="menu">
+    <div class="hero">
 
-        <div class="item">
-            <h2>Buttercream Cakes</h2>
+        <button class="menu-button">
+            Buttercream Cakes
+        </button>
 
-            <img src="Buttercream Cakes.png" width="300">
+        <button class="menu-button">
+            Tres Leches Cakes
+        </button>
 
-        </div>
-
-        <div class="item">
-            <h2>Dipped Treats</h2>
-
-            <img src="Dipped Treats.png" width="300">
-
-        </div>
-
-        <div class="item">
-            <h2>Tres Leches Cakes</h2>
-
-            <img src="Tres LEches.png" width="300">
-
-        </div>
+        <button class="menu-button">
+            Dipped Treats
+        </button>
 
     </div>
 
 </body>
+
+</html>
